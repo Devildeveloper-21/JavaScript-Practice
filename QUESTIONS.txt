@@ -1,0 +1,89 @@
+Level 1: Basics (Start here)
+
+Focus: variables, loops, conditions
+
+Print numbers from 1 to 50.
+Print even numbers between 1–100.
+Check if a number is positive, negative, or zero.
+Find the largest of 3 numbers.
+Reverse a number (e.g., 123 → 321).
+Check if a number is a palindrome (121 → yes).
+Print multiplication table of a number.
+Count digits in a number.
+Sum of digits of a number (e.g., 123 → 6).
+Check if a number is prime.
+
+
+
+
+Level 2: Functions + Arrays
+
+Focus: functions, arrays, basic logic
+
+Write a function to find the sum of an array.
+Find the largest number in an array.
+Reverse an array.
+Remove duplicates from an array.
+Count how many even numbers are in an array.
+Find the second largest number in an array.
+Merge two arrays without duplicates.
+Sort an array without using .sort().
+Find common elements between two arrays.
+Rotate an array by k steps.
+
+
+
+
+Level 3: Strings (Very Important)
+
+Focus: string manipulation
+
+Reverse a string.
+Check if a string is palindrome.
+Count vowels in a string.
+Find the longest word in a sentence.
+Capitalize first letter of each word.
+Remove spaces from a string.
+Check if two strings are anagrams.
+Count frequency of each character.
+Find duplicate characters in a string.
+Replace all vowels with *.
+
+
+
+
+Level 4: Objects + Logic
+
+Focus: real-world JS thinking
+
+Create an object for a student (name, marks) and calculate average.
+Count how many properties an object has.
+Convert object to array.
+Merge two objects.
+Find the key with the highest value.
+Group students by marks (e.g., pass/fail).
+Deep copy vs shallow copy (implement shallow copy).
+Loop through nested object.
+Create a simple calculator object.
+Sort object by values.
+
+
+
+
+
+
+
+Level 5: Mini Challenges (Real Practice)
+
+These will make you feel like a developer 👇
+
+Build a password generator (you already started—good choice 🔥).
+Create a to-do list (add, delete, mark complete).
+Simple calculator (UI + logic).
+Guess the number game.
+Character counter for text input.
+Form validation (email, password rules).
+Countdown timer.
+Dark/light theme toggle.
+Notes app (store in localStorage).
+Quiz app (basic MCQs).
