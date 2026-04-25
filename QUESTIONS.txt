@@ -2,16 +2,16 @@ Level 1: Basics (Start here)
 
 Focus: variables, loops, conditions
 
-Print numbers from 1 to 50.
-Print even numbers between 1–100.
-Check if a number is positive, negative, or zero.
-Find the largest of 3 numbers.
-Reverse a number (e.g., 123 → 321).
-Check if a number is a palindrome (121 → yes).
-Print multiplication table of a number.
-Count digits in a number.
-Sum of digits of a number (e.g., 123 → 6).
-Check if a number is prime.
+1. Print numbers from 1 to 50.
+2. Print even numbers between 1–100.
+3. Check if a number is positive, negative, or zero.
+4. Find the largest of 3 numbers.
+5. Reverse a number (e.g., 123 → 321).
+6. Check if a number is a palindrome (121 → yes).
+7. Print multiplication table of a number.
+8. Count digits in a number.
+9. Sum of digits of a number (e.g., 123 → 6).
+10. Check if a number is prime.
 
 
 
@@ -20,16 +20,16 @@ Level 2: Functions + Arrays
 
 Focus: functions, arrays, basic logic
 
-Write a function to find the sum of an array.
-Find the largest number in an array.
-Reverse an array.
-Remove duplicates from an array.
-Count how many even numbers are in an array.
-Find the second largest number in an array.
-Merge two arrays without duplicates.
-Sort an array without using .sort().
-Find common elements between two arrays.
-Rotate an array by k steps.
+1. Write a function to find the sum of an array.
+2. Find the largest number in an array.
+3. Reverse an array.
+4. Remove duplicates from an array.
+5. Count how many even numbers are in an array.
+6. Find the second largest number in an array.
+7. Merge two arrays without duplicates.
+8. Sort an array without using .sort().
+9. Find common elements between two arrays.
+10. Rotate an array by k steps.
 
 
 
@@ -38,16 +38,16 @@ Level 3: Strings (Very Important)
 
 Focus: string manipulation
 
-Reverse a string.
-Check if a string is palindrome.
-Count vowels in a string.
-Find the longest word in a sentence.
-Capitalize first letter of each word.
-Remove spaces from a string.
-Check if two strings are anagrams.
-Count frequency of each character.
-Find duplicate characters in a string.
-Replace all vowels with *.
+1. Reverse a string.
+2. Check if a string is palindrome.
+3. Count vowels in a string.
+4. Find the longest word in a sentence.
+5. Capitalize first letter of each word.
+6. Remove spaces from a string.
+7. Check if two strings are anagrams.
+8. Count frequency of each character.
+9. Find duplicate characters in a string.
+10. Replace all vowels with *.
 
 
 
@@ -56,16 +56,16 @@ Level 4: Objects + Logic
 
 Focus: real-world JS thinking
 
-Create an object for a student (name, marks) and calculate average.
-Count how many properties an object has.
-Convert object to array.
-Merge two objects.
-Find the key with the highest value.
-Group students by marks (e.g., pass/fail).
-Deep copy vs shallow copy (implement shallow copy).
-Loop through nested object.
-Create a simple calculator object.
-Sort object by values.
+1. Create an object for a student (name, marks) and calculate average.
+2. Count how many properties an object has.
+3. Convert object to array.
+4. Merge two objects.
+5. Find the key with the highest value.
+6. Group students by marks (e.g., pass/fail).
+7. Deep copy vs shallow copy (implement shallow copy).
+8. Loop through nested object.
+9. Create a simple calculator object.
+10. Sort object by values.
 
 
 
@@ -77,13 +77,13 @@ Level 5: Mini Challenges (Real Practice)
 
 These will make you feel like a developer 👇
 
-Build a password generator (you already started—good choice 🔥).
-Create a to-do list (add, delete, mark complete).
-Simple calculator (UI + logic).
-Guess the number game.
-Character counter for text input.
-Form validation (email, password rules).
-Countdown timer.
-Dark/light theme toggle.
-Notes app (store in localStorage).
-Quiz app (basic MCQs).
+1. Build a password generator (you already started—good choice 🔥).
+2. Create a to-do list (add, delete, mark complete).
+3. Simple calculator (UI + logic).
+4. Guess the number game.
+5. Character counter for text input.
+6. Form validation (email, password rules).
+7. Countdown timer.
+8. Dark/light theme toggle.
+9. Notes app (store in localStorage).
+10. Quiz app (basic MCQs).
