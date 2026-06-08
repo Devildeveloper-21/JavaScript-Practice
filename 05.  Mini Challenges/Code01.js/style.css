@@ -4,9 +4,9 @@
 }
 
 .outerContainer {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background: #68939f;
+    background: #0F172A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +14,72 @@
 
 .innerContainer {
     width: 20rem;
-    height: 10rem;
+    /* height: 10rem; */
     padding: 1rem;
-    background: white;
+    background: #1E293B;
     display: flex;
     border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
 }
 
-.title{
+.title {
+    color: #F8FAFC;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.lenght-wrapper,
+.inputLength {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputLength input {
+    height: .2rem;
+    width: 100%;
+    appearance: none;
+    background: #475569;
+    border-radius: 10rem;
+    accent-color: #22C55E;
+    cursor: pointer;
+}
+
+.passwordBox-CopyButton-Wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: .2rem;
+}
+
+.passwordBox {
+    border: 2px solid #475569;
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    background: #334155;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+
+.copyButton {
+    border: 2px solid #475569;
+    width: 10%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    background: #334155;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
