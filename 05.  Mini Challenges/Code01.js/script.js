@@ -28,6 +28,22 @@ passlengthBar.addEventListener("change", function (e) {
       password += symbols[Math.floor(Math.random() * symbols.length)];
     }
   }
-  passwordBox.innerHTML = password;
+  passwordBox.innerText = password;
   password = "";
+});
+
+copybtn.addEventListener("click", function () {
+  const text = passwordBox.innerText;
+  if (text === "") return;
+
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      alert("Copied!");
+    })
+    .catch((err) => {
+      alert("Copy Failed.");
+    });
+
+  console.log(text);
 });
