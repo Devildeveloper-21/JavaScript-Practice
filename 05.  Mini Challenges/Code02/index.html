@@ -1,28 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="outerContainer">
-      <div class="navbar-wrapper">
-        <div class="logo-text"><span>To</span><span>Do</span></div>
-        <div class="theme-toggle-button">
-          <i class="fa-solid fa-moon" style="color: #8b5cf6"></i>
-          <i class="fa-solid fa-sun" style="color: #8b5cf6"></i>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <span>To</span>
+      <span>DO</span>
     </div>
-  </body>
+
+    <p class="subtitle">Stay organized and productive</p>
+
+    <div class="input-box">
+      <input type="text" placeholder="Enter a task..." id="inputTask">
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="taskSection">
+
+      <div class="task-card">
+        <div class="left">
+          <input type="checkbox">
+          <p>Learn Flexbox</p>
+        </div>
+        <button class="delete-btn">🗑</button>
+      </div>
+
+      <div class="task-card completed">
+        <div class="left">
+          <input type="checkbox" checked>
+          <p>Complete Portfolio</p>
+        </div>
+        <button class="delete-btn">🗑</button>
+      </div>
+
+      <div class="task-card">
+        <div class="left">
+          <input type="checkbox">
+          <p>Build ToDO App</p>
+        </div>
+        <button class="delete-btn">🗑</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+<script type="module" src="script.js"></script>
 </html>
