@@ -117,7 +117,12 @@ body {
     border: none;
     background: transparent;
     cursor: pointer;
+    color: #94A3B8;
     font-size: 1.1rem;
+}
+
+.delete-btn:hover {
+    color: #EF4444;
 }
 
 @media (max-width: 600px) {

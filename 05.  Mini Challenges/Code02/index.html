@@ -1,57 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToDO</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="container">
-
-    <div class="logo">
-      <span>To</span>
-      <span>DO</span>
-    </div>
-
-    <p class="subtitle">Stay organized and productive</p>
-
-    <div class="input-box">
-      <input type="text" placeholder="Enter a task..." id="inputTask">
-      <button id="addTaskBtn">Add Task</button>
-    </div>
-
-    <div class="taskSection">
-
-      <div class="task-card">
-        <div class="left">
-          <input type="checkbox">
-          <p>Learn Flexbox</p>
-        </div>
-        <button class="delete-btn">🗑</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <span>To</span>
+        <span>DO</span>
       </div>
 
-      <div class="task-card completed">
-        <div class="left">
-          <input type="checkbox" checked>
-          <p>Complete Portfolio</p>
-        </div>
-        <button class="delete-btn">🗑</button>
+      <p class="subtitle">Stay organized and productive</p>
+
+      <div class="input-box">
+        <input type="text" placeholder="Enter a task..." id="inputTask" />
+        <button id="addTaskBtn">Add Task</button>
       </div>
 
-      <div class="task-card">
-        <div class="left">
-          <input type="checkbox">
-          <p>Build ToDO App</p>
+      <div class="taskSection">
+        <div class="task-card">
+          <div class="left">
+            <input type="checkbox" />
+            <p>Learn Flexbox</p>
+          </div>
+          <button class="delete-btn">🗑</button>
         </div>
-        <button class="delete-btn">🗑</button>
-      </div>
 
+        <div class="task-card completed">
+          <div class="left">
+            <input type="checkbox" checked />
+            <p>Complete Portfolio</p>
+          </div>
+          <button class="delete-btn">🗑</button>
+        </div>
+
+        <div class="task-card">
+          <div class="left">
+            <input type="checkbox" />
+            <p>Build ToDO App</p>
+          </div>
+          <button class="delete-btn">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-</body>
-<script type="module" src="script.js"></script>
+  </body>
+  <script type="module" src="script.js"></script>
 </html>
