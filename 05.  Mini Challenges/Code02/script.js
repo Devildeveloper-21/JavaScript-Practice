@@ -1,11 +1,12 @@
 //  Create a to-do list (add, delete, mark complete).
 
+let tasks =JSON.parse(localStorage.getItem("tasks")) || [];
 const addTaskBtn = document.getElementById("addTaskBtn");
 const inputTask = document.getElementById("inputTask");
 const taskSection = document.querySelector(".taskSection");
 const deleteBtn = document.querySelector(".delete-btn");
 
-function createTaskcontainer() {
+function createTaskcontainer(text) {
   let div = document.createElement("div");
   div.classList.add("task-card");
 
@@ -16,7 +17,7 @@ function createTaskcontainer() {
   checkbox.type = "checkbox";
 
   let task = document.createElement("p");
-  task.innerText = inputTask.value;
+  task.innerText = text;
 
   let deletebtn = document.createElement("button");
   deletebtn.classList.add("delete-btn");
@@ -36,10 +37,23 @@ addTaskBtn.addEventListener("click", function () {
   if (inputTask.value === "") {
     return alert("Enter task");
   } else {
-    createTaskcontainer();
+    tasks.push({
+      text: inputTask.value,
+      mark: false,
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    createTaskcontainer(inputTask.value);
     inputTask.value = "";
   }
 });
+
+window.onload = loadTaskcards;
+function loadTaskcards() {
+  let savedTask = JSON.parse(localStorage.getItem("tasks"));
+  savedTask.forEach((element) => {
+    createTaskcontainer(element.text);
+  });
+}
 
 taskSection.addEventListener("click", function (e) {
   if (e.target.type === "checkbox") {
