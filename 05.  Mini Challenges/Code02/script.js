@@ -1,13 +1,16 @@
 //  Create a to-do list (add, delete, mark complete).
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-let id = 0;
 const addTaskBtn = document.getElementById("addTaskBtn");
 const inputTask = document.getElementById("inputTask");
 const taskSection = document.querySelector(".taskSection");
 const deleteBtn = document.querySelector(".delete-btn");
 
-function createTaskcontainer(text, UID) {
+function saveToLocalStorage() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function createTaskcontainer(text, UID, completedtask) {
   let div = document.createElement("div");
   div.classList.add("task-card");
   div.id = UID;
@@ -17,6 +20,10 @@ function createTaskcontainer(text, UID) {
 
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  if (completedtask == true) {
+    checkbox.checked = completedtask;
+    div.classList.add("completed");
+  }
 
   let task = document.createElement("p");
   task.innerText = text;
@@ -39,48 +46,62 @@ addTaskBtn.addEventListener("click", function () {
   if (inputTask.value === "") {
     return alert("Enter task");
   } else {
+    let id = Date.now();
+
     const task = {
-      identity: id++,
+      identity: id,
       text: inputTask.value,
       mark: false,
     };
+
     tasks.push(task);
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-    createTaskcontainer(task.text, task.identity);
+    saveToLocalStorage();
+    createTaskcontainer(task.text, task.identity, false);
     inputTask.value = "";
-    console.log(tasks);
   }
 });
 
 window.onload = loadTaskcards;
 function loadTaskcards() {
   tasks.forEach((element) => {
-    createTaskcontainer(element.text, element.identity);
+    createTaskcontainer(element.text, element.identity, element.mark);
   });
 }
 
 taskSection.addEventListener("click", function (e) {
-  if (e.target.closest(".delete-btn")) {
-    let getidtoRemove = e.target.closest(".task-card").id;
-    e.target.closest(".task-card").remove();
-    for (const key in tasks) {
-      if (getidtoRemove == tasks[key].identity) {
-        console.log(tasks[key].identity);
-        tasks.splice(key, 1);
-      }
-    }
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }
-});
+  let getidToMarkChecked = e.target.closest(".task-card").id;
 
-
-taskSection.addEventListener("click", function (e) {
   if (e.target.type === "checkbox") {
     if (e.target.checked) {
       e.target.closest(".task-card").classList.add("completed");
     } else {
       e.target.closest(".task-card").classList.remove("completed");
     }
+
+    for (const key in tasks) {
+      if (tasks[key].identity == getidToMarkChecked) {
+        tasks[key].mark = e.target.checked;
+      }
+    }
+  }
+
+  saveToLocalStorage();
+  console.log(localStorage.tasks);
+});
+
+taskSection.addEventListener("click", function (e) {
+  if (e.target.closest(".delete-btn")) {
+    let getidtoRemove = e.target.closest(".task-card").id;
+
+    e.target.closest(".task-card").remove();
+
+    for (const key in tasks) {
+      if (getidtoRemove == tasks[key].identity) {
+        console.log(tasks[key].identity);
+        tasks.splice(key, 1);
+      }
+    }
+
+    saveToLocalStorage();
   }
 });
-// localStorage.clear();
