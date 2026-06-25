@@ -86,7 +86,6 @@ taskSection.addEventListener("click", function (e) {
   }
 
   saveToLocalStorage();
-  console.log(localStorage.tasks);
 });
 
 taskSection.addEventListener("click", function (e) {
@@ -97,7 +96,6 @@ taskSection.addEventListener("click", function (e) {
 
     for (const key in tasks) {
       if (getidtoRemove == tasks[key].identity) {
-        console.log(tasks[key].identity);
         tasks.splice(key, 1);
       }
     }

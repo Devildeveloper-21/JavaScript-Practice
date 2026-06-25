@@ -139,4 +139,9 @@ body {
     .logo {
         font-size: 2.4rem;
     }
+
+    .input-box input {
+    padding: 1rem;
+}
+
 }
