@@ -1,4 +1,16 @@
-let expression = "12+3434.6-8.6";
+let expression = "12+3434.1+";
+
+function checkOperator() {
+  if ("+-*/".includes(expression[expression.length - 1])) {
+    console.log("Dont Allow To Add Operator");
+  } else {
+    console.log("Allow To Add Operator");
+  }
+}
+
+checkOperator();
+
+console.log(expression[expression.length - 1]);
 
 function CheckTheDecimal() {
   let getNum = "";
@@ -26,5 +38,4 @@ function CheckTheDecimal() {
   console.log(getNum);
 }
 
-CheckTheDecimal();
-
+// CheckTheDecimal();
